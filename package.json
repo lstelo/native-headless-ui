@@ -1,0 +1,64 @@
+{
+  "name": "vair",
+  "version": "0.0.1",
+  "description": "ver más",
+  "repository": "https://github.com/raemundo/vair",
+  "author": "raemundo eimooamai@outlook.com",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module",
+    "build:ts": "tsc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "expo-linear-gradient": "^11.0.2",
+    "next": "12.0.10",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.67.2",
+    "react-native-web": "0.17.5",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "twrnc": "3.0.1",
+    "typescript": "~4.5.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@expo/next-adapter": "^3.1.12",
+    "@expo/webpack-config": "^0.16.16",
+    "@graphql-codegen/cli": "2.5.0",
+    "@storybook/addon-actions": "^6.4.18",
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/addon-links": "^6.4.18",
+    "@storybook/react": "^6.4.18",
+    "@types/react": "~17.0.39",
+    "@types/react-dom": "~17.0.9",
+    "@types/react-native": "~0.66.15",
+    "autoprefixer": "^10",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "expo-module-scripts": "^2.0.0",
+    "husky": "^7.0.4",
+    "postcss": "^8"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

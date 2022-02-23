@@ -1,26 +1,8 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "es6",
+    "module": "es6", 
     "outDir": "./",
-    "incremental": true,
-    "allowJs": true,
-    "alwaysStrict": false,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": false,
     "baseUrl": ".",
     "paths": {
       "@/*": [
@@ -34,11 +16,7 @@
       ]
     }
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "extends": "expo-module-scripts/tsconfig.base",
+  "include": ["./src"],
+  "exclude": ["**/__mocks__/*", "**/__tests__/*", "examples", "node_modules"]
 }

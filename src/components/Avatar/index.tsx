@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, Image } from 'react-native'
-import { tw } from "~/lib/tailwind"
+import { tw } from "../../lib/tailwind"
 
 export default function Avatar({ source, children, style = {} }) {
     if (source) {

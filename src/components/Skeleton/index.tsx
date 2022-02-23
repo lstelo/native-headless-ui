@@ -1,5 +1,5 @@
 import React from 'react'
-import { tw } from "~/lib/tailwind";
+import { tw } from "../../lib/tailwind";
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default function Skeleton({ width = 100, height = 10, variant="rectangular", style={} }) {

@@ -10,7 +10,7 @@
     "clean": "expo-module clean",
     "test": "expo-module test",
     "expo-module": "expo-module",
-    "build:ts": "tsc",
+    "build:ts": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
